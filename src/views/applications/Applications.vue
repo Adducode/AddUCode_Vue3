@@ -1,8 +1,9 @@
 <template>
     <layout>
-        <div class="about">
-            <h1>This is an about page</h1>
+        <div>
+            Applications
         </div>
+        <router-link to="app1">App1</router-link>
     </layout>
 </template>
 
@@ -10,13 +11,13 @@
 import Layout from '@/components/layout/Layout'
 
 export default {
-    name:"About",
+    name: "Applications",
     components: {
         Layout
     }
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 
 </style>

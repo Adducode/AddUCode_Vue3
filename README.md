@@ -1,4 +1,4 @@
-# adducode
+# AddUCode
 
 ## Project setup
 ```
