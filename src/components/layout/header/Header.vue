@@ -15,7 +15,6 @@
                 </div>
             </div>
             <div class="header__links-wrapper">
-                <arrow></arrow>
                 <add-button :to="{ name: 'Applications' }" title="Apps" gold-btn @click="closeMenu"></add-button>
                 <add-button :to="{ name: 'Projects' }" title="Projects" gold-btn @click="closeMenu"></add-button>
                 <add-button :to="{ name: 'About' }" title="About me / CV" gold-btn @click="closeMenu"></add-button>
@@ -40,13 +39,11 @@
 <script>
 import Button from '@/components/atoms/Button'
 import { mapGetters, mapActions} from 'vuex'
-import MenuArrow from '@/components/atoms/MenuArrow'
 
 export default {
     name: "Header",
     components: {
         'add-button': Button,
-        'arrow': MenuArrow,
     },
     computed: {
         ...mapGetters([
@@ -170,7 +167,7 @@ export default {
         }
 
         a:nth-child(n+1) {
-            margin: 20px 0;
+            padding: 20px 0;
 
             @include media-breakpoint-up(md) {
                 margin: 0 14px 0 0;
@@ -237,7 +234,7 @@ export default {
         }
 
         a:last-child {
-            margin-bottom: 30px;
+            margin-bottom: 5px;
 
             @include media-breakpoint-up(md) {
                 margin-bottom: 0;
@@ -250,6 +247,7 @@ export default {
         flex-direction: column;
         box-shadow: 0 0 15px $white-color-100;
         position: absolute;
+        z-index: 999;
         top: 5px;
         left: 50%;
         transform: translateX(-50%);
