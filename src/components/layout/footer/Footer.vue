@@ -1,36 +1,39 @@
 <template>
     <div id="footer" class="footer">
-        <add-button :to="{ name: 'Home' }" title="AddUCode" gold-btn class="footer__logo"></add-button>
-        <div class="footer__social-wrapper">
-            <a href="https://github.com/Adducode/AddUCode" target="_blank" class="footer__social-github">
-                <img src="../../../assets/icons/github.svg" alt="github icon" class="footer__social-icon">
-            </a>
-            <a href="" target="_blank" class="footer__social-facebook">
-                <img src="../../../assets/icons/facebook.svg" alt="facebook icon" class="footer__social-icon">
-            </a>
-            <a href="" target="_blank" class="footer__social-instagram">
-                <img src="../../../assets/icons/instagram.svg" alt="instagram icon" class="footer__social-icon">
-            </a>
-        </div>
-        <div class="footer__column-wrapper">
-            <div class="footer__first-column">
-                <add-button :to="{ name: 'Applications' }" title="Apps" gold-btn></add-button>
-                <add-button :to="{ name: 'Projects' }" title="Projects" gold-btn></add-button>
-                <add-button :to="{ name: 'About' }" title="About me / CV" gold-btn></add-button>
+        <div class="footer__wrapper">
+            <add-button :to="{ name: 'Home' }" title="AddUCode" gold-btn class="footer__logo"></add-button>
+            <div class="footer__social-wrapper">
+                <a href="https://github.com/Adducode/AddUCode" target="_blank" class="footer__social-github">
+                    <img src="../../../assets/icons/github.svg" alt="github icon" class="footer__social-icon">
+                </a>
+                <a href="" target="_blank" class="footer__social-facebook">
+                    <img src="../../../assets/icons/facebook.svg" alt="facebook icon" class="footer__social-icon">
+                </a>
+                <a href="" target="_blank" class="footer__social-instagram">
+                    <img src="../../../assets/icons/instagram.svg" alt="instagram icon" class="footer__social-icon">
+                </a>
             </div>
-            <div class="footer__second-column">
-                <add-button :to="{ name: 'Contact' }" title="Contact" gold-btn></add-button>
-                <add-button :to="{ name: 'Options' }" title="Options" gold-btn></add-button>
+            <div class="footer__column-wrapper">
+                <div class="footer__first-column">
+                    <add-button :to="{ name: 'Applications' }" title="Apps" gold-btn></add-button>
+                    <add-button :to="{ name: 'Projects' }" title="Projects" gold-btn></add-button>
+                    <add-button :to="{ name: 'About' }" title="About me / CV" gold-btn></add-button>
+                </div>
+                <div class="footer__second-column">
+                    <add-button :to="{ name: 'Contact' }" title="Contact" gold-btn></add-button>
+                    <add-button :to="{ name: 'Options' }" title="Options" gold-btn></add-button>
+                </div>
+            </div>
+            <div class="footer__contact-wrapper">
+                <a href="tel:+48792320103" class="footer__contact-phone">
+                    <img src="../../../assets/icons/phone.svg" alt="phone" class="footer__social-icon footer__social-icon--width"> 792 320 103
+                </a>
+                <a href="mailto:mateusz.kraska.95@gmail.com?subject=AdduEmail:" class="footer__contact-email">
+                    <img src="../../../assets/icons/email.svg" alt="email" class="footer__social-icon footer__social-icon--width"> mateusz.kraska.95@gmail.com
+                </a>
             </div>
         </div>
-        <div class="footer__contact-wrapper">
-            <a href="tel:+48792320103" class="footer__contact-phone">
-                <img src="../../../assets/icons/phone.svg" alt="phone" class="footer__social-icon footer__social-icon--width"> 792 320 103
-            </a>
-            <a href="mailto:adducode@gmail.com" class="footer__contact-email">
-                <img src="../../../assets/icons/email.svg" alt="email" class="footer__social-icon footer__social-icon--width"> adducode@gmail.com
-            </a>
-        </div>
+        <div class="footer__copyright">Created by Mateusz Kraska</div>
     </div>
 </template>
 
@@ -51,23 +54,28 @@ export default {
 .footer {
     font-size: 18px;
     font-family: $font-fredricka;
-    padding: 30px 10px 40px;
+    padding: 30px 10px 20px;
     background-color: $gold-color-500;
     background-image: linear-gradient(315deg, $black-color-900 0%, $gold-color-500 74%);
 
     @include media-breakpoint-up(md) {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 50px 10px;
+        padding: 50px 10px 30px;
     }
 
     @include media-breakpoint-up(lg) {
-        padding: 50px 30px;
+        padding: 50px 30px 30px;
     }
 
     @include media-breakpoint-up(xl) {
-        padding: 70px 30px;
+        padding: 70px 30px 50px;
+    }
+
+    &__wrapper {
+        @include media-breakpoint-up(md) {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
     }
 
     &__logo {
@@ -356,6 +364,8 @@ export default {
 
         @include media-breakpoint-up(md) {
             margin-left: 0;
+            word-break: break-all;
+            line-height: 1;
         }
 
         &:hover {
@@ -369,6 +379,13 @@ export default {
                 opacity: 0;
             }
         }
+    }
+
+    &__copyright {
+        font-size: 14px;
+        text-align: center;
+        color: $gold-color-400;
+        margin-top: 20px;
     }
 }
 

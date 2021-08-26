@@ -39,6 +39,10 @@ const routes = [
             application: Applications
         }
     },
+    {
+        path: '/:catchAll(.*)',
+        redirect: '/'
+    }
 ]
 
 const router = createRouter({

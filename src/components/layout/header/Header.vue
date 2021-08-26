@@ -170,7 +170,7 @@ export default {
             padding: 20px 0;
 
             @include media-breakpoint-up(md) {
-                margin: 0 14px 0 0;
+                margin: 0 11px 0 0;
                 padding: 39px 5px;
                 position: relative;
             }
