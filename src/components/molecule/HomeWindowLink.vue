@@ -197,16 +197,16 @@ export default {
                 width: 97%;
             }
 
-            &::before {
+            &:before {
                 display: none;
             }
 
-            &::after {
+            &:after {
                 display: none;
             }
         }
 
-        &::before {
+        &:before {
             content: url("../../assets/icons/right-arrow.svg");
             width: 12px;
             height: 12px;
@@ -216,7 +216,7 @@ export default {
             color: $gold-color-400;
         }
 
-        &::after {
+        &:after {
             content: url("../../assets/icons/left-arrow.svg");
             width: 12px;
             height: 12px;
@@ -258,18 +258,18 @@ export default {
             }
 
             &:hover {
-                &::after {
+                &:after {
                     display: none;
                 }
             }
 
-            &::after {
+            &:after {
                 @include media-breakpoint-up(md) {
                     display: block;
                 }
             }
 
-            &::before {
+            &:before {
                 @include media-breakpoint-up(md) {
                     display: none;
                 }
