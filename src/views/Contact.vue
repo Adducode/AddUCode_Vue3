@@ -10,7 +10,9 @@
                 <a href="mailto:mateusz.kraska.95@gmail.com?subject=AdduEmail:" class="contact__contact-email">
                     <img src="../assets/icons/email.svg" alt="email" class="contact__social-icon contact__social-icon--width"> e-mail: mateusz.kraska.95@gmail.com
                 </a>
-                <div class="contact__address">address: Łepkowskiego 5/22, 31-423 Kraków</div>
+                <a href="https://www.google.com/maps/place/J%C3%B3zefa+%C5%81epkowskiego+5,+30-001+Krak%C3%B3w/@50.0896257,19.9622051,19z/data=!4m5!3m4!1s0x47165aedda1f6a7d:0xa5c9bb551b3d98fb!8m2!3d50.0897875!4d19.9618162"
+                   class="contact__address" target="_blank">address: Łepkowskiego 5/22, 31-423 Kraków
+                </a>
             </div>
         </div>
     </layout>
@@ -136,6 +138,14 @@ export default {
     &__address {
         margin-top: 20px;
         text-align: center;
+        color: $gold-color-400;
+        text-decoration: none;
+        transition: opacity 0.3s;
+
+        &:hover {
+            color: $gold-color-400;
+            opacity: 0.5;
+        }
     }
 }
 </style>
