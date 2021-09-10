@@ -6,6 +6,7 @@
                 title="Apps"
                 description="Here you can find, my simple and more advance applications, project or some useful cases"
                 apps-img
+                :to="{ name: 'Applications'}"
             >
             </home-window-link>
             <home-window-link
@@ -13,11 +14,13 @@
                 description="In this subpage you can see my commercial works and project which I worked on or commercial projects what I made"
                 projects-img
                 reverse
+                :to="{ name: 'Projects'}"
             ></home-window-link>
             <home-window-link
                 title="About me"
                 description="This subpage is about myself and here you can look on my CV and download it if you want"
                 about-img
+                :to="{ name: 'About'}"
             >
             </home-window-link>
             <home-window-link
@@ -25,11 +28,13 @@
                 description="Here are my contact information if you want to work with me"
                 contact-img
                 reverse
+                :to="{ name: 'Contact'}"
             ></home-window-link>
             <home-window-link
                 title="Options"
                 description="Some options to change website display, colors etc."
                 options-img
+                :to="{ name: 'Options'}"
             >
             </home-window-link>
         </div>

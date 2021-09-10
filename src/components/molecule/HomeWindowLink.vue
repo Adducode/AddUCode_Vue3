@@ -12,7 +12,7 @@
             }"></div>
         </div>
         <div class="home-window-link__right-wrapper">
-            <add-button class="home-window-link__btn" :to="{ name: 'Applications' }" :title="title"></add-button>
+            <add-button class="home-window-link__btn" :to="to" :title="title"></add-button>
             <p class="home-window-link__description">{{ description }}</p>
         </div>
     </div>
@@ -35,6 +35,7 @@ export default {
         aboutImg: Boolean,
         contactImg: Boolean,
         optionsImg: Boolean,
+        to: String
     }
 }
 </script>
