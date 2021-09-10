@@ -12,6 +12,7 @@
                 <a href="https://airmaxremote.com/savings-calculator/" target="_blank" class="projects__link">Air max remote</a>
                 <a href="https://fleetscompareus.com/" target="_blank" class="projects__link">Fleets compare</a>
                 <a href="https://zalap.pl/" target="_blank" class="projects__link">Załap</a>
+                <a href="https://c-m-s.tech/" target="_blank" class="projects__link">C-M-S tech</a>
                 <div class="projects__link projects__link--not-link">Newsletters on email for every devices and every browsers and all software</div>
             </div>
         </div>
